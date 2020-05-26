@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9e7d595ebfb042aca24afc04f9a110c0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9e7d595ebfb042aca24afc04f9a110c0" ></div>
+        
+</body>
+<script>    
+    
+            var map_9e7d595ebfb042aca24afc04f9a110c0 = L.map(
+                "map_9e7d595ebfb042aca24afc04f9a110c0",
+                {
+                    center: [-20.0, -44.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f5d0c0b8d65a49018f26ae46c4af4ad3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+            var circle_marker_bf0ecc156834494b8f2cf6f224ab4530 = L.circleMarker(
+                [-24.0432716, -46.73828220000001],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.231044601659306, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_cf45c79b8e5745bc871821fa59fb24fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ddd1abce27604d828420e40df52c9a3f = $(`<div id="html_ddd1abce27604d828420e40df52c9a3f" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.1 days, Baixada Santista, 412 delayed packages</div>`)[0];
+            popup_cf45c79b8e5745bc871821fa59fb24fa.setContent(html_ddd1abce27604d828420e40df52c9a3f);
+        
+
+        circle_marker_bf0ecc156834494b8f2cf6f224ab4530.bindPopup(popup_cf45c79b8e5745bc871821fa59fb24fa)
+        ;
+
+        
+    
+    
+            var circle_marker_45c5909d407642e2802912a042ad8b32 = L.circleMarker(
+                [-19.901739000000003, -43.964196],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.328904005444077, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_2cce841827cb41bba666102aa729adee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_326509434bd04e0d82cea60bfbf7486d = $(`<div id="html_326509434bd04e0d82cea60bfbf7486d" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.1 days, Belo Horizonte, 581 delayed packages</div>`)[0];
+            popup_2cce841827cb41bba666102aa729adee.setContent(html_326509434bd04e0d82cea60bfbf7486d);
+        
+
+        circle_marker_45c5909d407642e2802912a042ad8b32.bindPopup(popup_2cce841827cb41bba666102aa729adee)
+        ;
+
+        
+    
+    
+            var circle_marker_f8c2c83ac2c2425fb69f15445a760130 = L.circleMarker(
+                [-15.783332999999999, -47.916667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.403892612585448, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_e3fc047ff92849cf8ba47090ec241793 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d24d814c70e74cf19c20cd4eba1585f2 = $(`<div id="html_d24d814c70e74cf19c20cd4eba1585f2" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.5 days, Brasília, 318 delayed packages</div>`)[0];
+            popup_e3fc047ff92849cf8ba47090ec241793.setContent(html_d24d814c70e74cf19c20cd4eba1585f2);
+        
+
+        circle_marker_f8c2c83ac2c2425fb69f15445a760130.bindPopup(popup_e3fc047ff92849cf8ba47090ec241793)
+        ;
+
+        
+    
+    
+            var circle_marker_6638b3371f9b48d5a82a9eb7ecc045a9 = L.circleMarker(
+                [-22.909474, -47.067415000000004],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.306838406587644, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_b93260675163491a9465c7a4fbd8b8bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_631471d1013440adb653f107356c9e62 = $(`<div id="html_631471d1013440adb653f107356c9e62" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.5 days, Campinas, 577 delayed packages</div>`)[0];
+            popup_b93260675163491a9465c7a4fbd8b8bf.setContent(html_631471d1013440adb653f107356c9e62);
+        
+
+        circle_marker_6638b3371f9b48d5a82a9eb7ecc045a9.bindPopup(popup_b93260675163491a9465c7a4fbd8b8bf)
+        ;
+
+        
+    
+    
+            var circle_marker_67f4332209e94003a2b4d5115a58c767 = L.circleMarker(
+                [-23.8679701, -46.4791787],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.782217273725362, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_a80acfd6d1a54a9c99dc12f57504a5b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32596c3f83ab4951be9fa3f9d545e26c = $(`<div id="html_32596c3f83ab4951be9fa3f9d545e26c" style="width: 100.0%; height: 100.0%;">Mean Delay: 1.9 days, Cubatão, 40 delayed packages</div>`)[0];
+            popup_a80acfd6d1a54a9c99dc12f57504a5b5.setContent(html_32596c3f83ab4951be9fa3f9d545e26c);
+        
+
+        circle_marker_67f4332209e94003a2b4d5115a58c767.bindPopup(popup_a80acfd6d1a54a9c99dc12f57504a5b5)
+        ;
+
+        
+    
+    
+            var circle_marker_093c7eab88154d4e9dde8760e55e70b2 = L.circleMarker(
+                [-25.416667, -49.25],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.698213512097112, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_72d84266774045febfa4a58997ce3273 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b09433a08a914e61ae64eb47b84d8d3a = $(`<div id="html_b09433a08a914e61ae64eb47b84d8d3a" style="width: 100.0%; height: 100.0%;">Mean Delay: 3.8 days, Curitiba, 892 delayed packages</div>`)[0];
+            popup_72d84266774045febfa4a58997ce3273.setContent(html_b09433a08a914e61ae64eb47b84d8d3a);
+        
+
+        circle_marker_093c7eab88154d4e9dde8760e55e70b2.bindPopup(popup_72d84266774045febfa4a58997ce3273)
+        ;
+
+        
+    
+    
+            var circle_marker_93c483e5dd894d0fae5236337bf4154e = L.circleMarker(
+                [-27.590444, -48.57581],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.676733448883757, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_6236a33cac444657acbc9ed4e308a4b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3146b2aee5df44c1867c60c37b71c1d4 = $(`<div id="html_3146b2aee5df44c1867c60c37b71c1d4" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.2 days, Florianópolis, 99 delayed packages</div>`)[0];
+            popup_6236a33cac444657acbc9ed4e308a4b1.setContent(html_3146b2aee5df44c1867c60c37b71c1d4);
+        
+
+        circle_marker_93c483e5dd894d0fae5236337bf4154e.bindPopup(popup_6236a33cac444657acbc9ed4e308a4b1)
+        ;
+
+        
+    
+    
+            var circle_marker_c12988a8bbdc47e4a9cc082eba20beb0 = L.circleMarker(
+                [-3.737464, -38.546167],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#993404", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.397199367407453, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_552351512931498c8d41f04a447bcb82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f64ff5259a3f4db7962680d03669ce14 = $(`<div id="html_f64ff5259a3f4db7962680d03669ce14" style="width: 100.0%; height: 100.0%;">Mean Delay: 7.8 days, Fortaleza, 434 delayed packages</div>`)[0];
+            popup_552351512931498c8d41f04a447bcb82.setContent(html_f64ff5259a3f4db7962680d03669ce14);
+        
+
+        circle_marker_c12988a8bbdc47e4a9cc082eba20beb0.bindPopup(popup_552351512931498c8d41f04a447bcb82)
+        ;
+
+        
+    
+    
+            var circle_marker_2cde88f311c8443fbd3c05b1b155d01c = L.circleMarker(
+                [-16.701028, -49.266793],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.660901018617118, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_16c457ba65d0413e89b3a0f2223902c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c6031ce061946319ef573f887f2c0fb = $(`<div id="html_2c6031ce061946319ef573f887f2c0fb" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.9 days, Goiânia, 252 delayed packages</div>`)[0];
+            popup_16c457ba65d0413e89b3a0f2223902c1.setContent(html_2c6031ce061946319ef573f887f2c0fb);
+        
+
+        circle_marker_2cde88f311c8443fbd3c05b1b155d01c.bindPopup(popup_16c457ba65d0413e89b3a0f2223902c1)
+        ;
+
+        
+    
+    
+            var circle_marker_648b0b066b934878a71125c007b4c31a = L.circleMarker(
+                [-23.4640682, -46.3690028],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.2139001248521626, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_9b8ef0c5530242c9bdd0b994f66dcc4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3c902e1c3a9413e944bbd20d0ac5f54 = $(`<div id="html_d3c902e1c3a9413e944bbd20d0ac5f54" style="width: 100.0%; height: 100.0%;">Mean Delay: 3.1 days, Itaquaquecetuba, 2 delayed packages</div>`)[0];
+            popup_9b8ef0c5530242c9bdd0b994f66dcc4c.setContent(html_d3c902e1c3a9413e944bbd20d0ac5f54);
+        
+
+        circle_marker_648b0b066b934878a71125c007b4c31a.bindPopup(popup_9b8ef0c5530242c9bdd0b994f66dcc4c)
+        ;
+
+        
+    
+    
+            var circle_marker_b5103f6ea23e4e3292dc576db3cc8bbf = L.circleMarker(
+                [-26.3, -48.833333],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.192403954000465, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_ccec6ec6d701401e9fc5ce4fd62b2a7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f7dff2be05b43ce850e6fc2baade25a = $(`<div id="html_8f7dff2be05b43ce850e6fc2baade25a" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.9 days, Joinville, 13 delayed packages</div>`)[0];
+            popup_ccec6ec6d701401e9fc5ce4fd62b2a7c.setContent(html_8f7dff2be05b43ce850e6fc2baade25a);
+        
+
+        circle_marker_b5103f6ea23e4e3292dc576db3cc8bbf.bindPopup(popup_ccec6ec6d701401e9fc5ce4fd62b2a7c)
+        ;
+
+        
+    
+    
+            var circle_marker_ff0cbcf5dab747b5b81063f1c3069e05 = L.circleMarker(
+                [-3.1133330000000004, -60.025278],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#993404", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.025105156122276, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_da24c9bde8144250ac78a6246097ce14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7eb231632da54408ae31d11b22d89bfc = $(`<div id="html_7eb231632da54408ae31d11b22d89bfc" style="width: 100.0%; height: 100.0%;">Mean Delay: 9.1 days, Manaus, 151 delayed packages</div>`)[0];
+            popup_da24c9bde8144250ac78a6246097ce14.setContent(html_7eb231632da54408ae31d11b22d89bfc);
+        
+
+        circle_marker_ff0cbcf5dab747b5b81063f1c3069e05.bindPopup(popup_da24c9bde8144250ac78a6246097ce14)
+        ;
+
+        
+    
+    
+            var circle_marker_f7eedefd8fc64502a167825ede27c9ba = L.circleMarker(
+                [-22.727404999999997, -47.644829],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.722848803084726, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_1a1bba2afb724f599734611bb553e8b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc337b126d0344a89c662826b5ea302f = $(`<div id="html_bc337b126d0344a89c662826b5ea302f" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.8 days, Piracicaba, 6 delayed packages</div>`)[0];
+            popup_1a1bba2afb724f599734611bb553e8b6.setContent(html_bc337b126d0344a89c662826b5ea302f);
+        
+
+        circle_marker_f7eedefd8fc64502a167825ede27c9ba.bindPopup(popup_1a1bba2afb724f599734611bb553e8b6)
+        ;
+
+        
+    
+    
+            var circle_marker_75aa5dbe6e8248cdbc21450d81ae8a92 = L.circleMarker(
+                [-30.033333000000002, -51.2],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.39589607981195, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_2c1d669b70874d2cbefe1636b4aa25fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1b5df4527be45d580ae6a4023e9a19d = $(`<div id="html_c1b5df4527be45d580ae6a4023e9a19d" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.2 days, Porto Alegre, 124 delayed packages</div>`)[0];
+            popup_2c1d669b70874d2cbefe1636b4aa25fc.setContent(html_c1b5df4527be45d580ae6a4023e9a19d);
+        
+
+        circle_marker_75aa5dbe6e8248cdbc21450d81ae8a92.bindPopup(popup_2c1d669b70874d2cbefe1636b4aa25fc)
+        ;
+
+        
+    
+    
+            var circle_marker_011bd5795e9a469995ed94edd086a43a = L.circleMarker(
+                [-8.05, -34.9],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.47793353472709, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_589ae27e7e1343efa5074084f388d8a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25193622c37b4ece926b44a164a3eb0d = $(`<div id="html_25193622c37b4ece926b44a164a3eb0d" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.5 days, Recife, 174 delayed packages</div>`)[0];
+            popup_589ae27e7e1343efa5074084f388d8a0.setContent(html_25193622c37b4ece926b44a164a3eb0d);
+        
+
+        circle_marker_011bd5795e9a469995ed94edd086a43a.bindPopup(popup_589ae27e7e1343efa5074084f388d8a0)
+        ;
+
+        
+    
+    
+            var circle_marker_164beb395c6d4f0db07f39fac6ad1128 = L.circleMarker(
+                [-23.6937842, -46.4662287],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_ac9bb42c6e7a4fb9bfb2330d7d7b7e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a24f10b6d08943a0accf520b012db0ea = $(`<div id="html_a24f10b6d08943a0accf520b012db0ea" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.5 days, Ribeirão Pires, 1 delayed packages</div>`)[0];
+            popup_ac9bb42c6e7a4fb9bfb2330d7d7b7e06.setContent(html_a24f10b6d08943a0accf520b012db0ea);
+        
+
+        circle_marker_164beb395c6d4f0db07f39fac6ad1128.bindPopup(popup_ac9bb42c6e7a4fb9bfb2330d7d7b7e06)
+        ;
+
+        
+    
+    
+            var circle_marker_b25c031ffb004beab9902ace55b4f2cb = L.circleMarker(
+                [-21.1794578, -47.8727982],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.158414255634002, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_098c9b290f784a118f66c21f61609d39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0af204db46af418e9be9eeacaa3fbde9 = $(`<div id="html_0af204db46af418e9be9eeacaa3fbde9" style="width: 100.0%; height: 100.0%;">Mean Delay: 1.2 days, Ribeirão Preto, 45 delayed packages</div>`)[0];
+            popup_098c9b290f784a118f66c21f61609d39.setContent(html_0af204db46af418e9be9eeacaa3fbde9);
+        
+
+        circle_marker_b25c031ffb004beab9902ace55b4f2cb.bindPopup(popup_098c9b290f784a118f66c21f61609d39)
+        ;
+
+        
+    
+    
+            var circle_marker_066729e0b890417eb2d42b657a8fbbd0 = L.circleMarker(
+                [-22.875113, -43.277547999999996],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.874097004394965, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_732d065ff80545c18b7e636f09953023 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c031df0700d47c6be8957454e806819 = $(`<div id="html_8c031df0700d47c6be8957454e806819" style="width: 100.0%; height: 100.0%;">Mean Delay: 5.1 days, Rio de Janeiro, 1289 delayed packages</div>`)[0];
+            popup_732d065ff80545c18b7e636f09953023.setContent(html_8c031df0700d47c6be8957454e806819);
+        
+
+        circle_marker_066729e0b890417eb2d42b657a8fbbd0.bindPopup(popup_732d065ff80545c18b7e636f09953023)
+        ;
+
+        
+    
+    
+            var circle_marker_59357bd90df44c7d957dbcf8f2622493 = L.circleMarker(
+                [-12.983333, -38.516667],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.874461474724125, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_6c7b66e0dc83480095b094c21a55399b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97d4b8797c004fd59962c25cf1575ee3 = $(`<div id="html_97d4b8797c004fd59962c25cf1575ee3" style="width: 100.0%; height: 100.0%;">Mean Delay: 3.2 days, Salvador, 197 delayed packages</div>`)[0];
+            popup_6c7b66e0dc83480095b094c21a55399b.setContent(html_97d4b8797c004fd59962c25cf1575ee3);
+        
+
+        circle_marker_59357bd90df44c7d957dbcf8f2622493.bindPopup(popup_6c7b66e0dc83480095b094c21a55399b)
+        ;
+
+        
+    
+    
+            var circle_marker_3559a7ac11a94fd19d020d5e75cefa7b = L.circleMarker(
+                [-23.5, -47.459590000000006],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.30053646697512, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_57a717e1be9d45738f51fcb82878e781 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a28f0653944a47a8a27274aee728ec02 = $(`<div id="html_a28f0653944a47a8a27274aee728ec02" style="width: 100.0%; height: 100.0%;">Mean Delay: 4.2 days, Sorocaba, 88 delayed packages</div>`)[0];
+            popup_57a717e1be9d45738f51fcb82878e781.setContent(html_a28f0653944a47a8a27274aee728ec02);
+        
+
+        circle_marker_3559a7ac11a94fd19d020d5e75cefa7b.bindPopup(popup_57a717e1be9d45738f51fcb82878e781)
+        ;
+
+        
+    
+    
+            var circle_marker_14bd6c28eaba414e95d5443db9990f4b = L.circleMarker(
+                [-23.191164999999998, -45.878405],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.714334114670965, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_8302b242c3d24c619b247e2fc60a1f7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba28329849140c9975cd776a956a468 = $(`<div id="html_6ba28329849140c9975cd776a956a468" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.2 days, São José dos Campos, 137 delayed packages</div>`)[0];
+            popup_8302b242c3d24c619b247e2fc60a1f7d.setContent(html_6ba28329849140c9975cd776a956a468);
+        
+
+        circle_marker_14bd6c28eaba414e95d5443db9990f4b.bindPopup(popup_8302b242c3d24c619b247e2fc60a1f7d)
+        ;
+
+        
+    
+    
+            var circle_marker_e860cbbd882046a98d24529c8ff4ec25 = L.circleMarker(
+                [-23.573252, -46.641681],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.983187418918035, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_8fbad20e3e9141998852e9bcba3dadb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de1dc235310c4c8c9913a17a4cc5843c = $(`<div id="html_de1dc235310c4c8c9913a17a4cc5843c" style="width: 100.0%; height: 100.0%;">Mean Delay: 2.6 days, São Paulo, 11937 delayed packages</div>`)[0];
+            popup_8fbad20e3e9141998852e9bcba3dadb9.setContent(html_de1dc235310c4c8c9913a17a4cc5843c);
+        
+
+        circle_marker_e860cbbd882046a98d24529c8ff4ec25.bindPopup(popup_8fbad20e3e9141998852e9bcba3dadb9)
+        ;
+
+        
+    
+    
+            var circle_marker_c82a19552cef44ad8b6112cad8e93cf1 = L.circleMarker(
+                [-18.915404000000002, -48.272587],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffd4", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.381684895503355, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_f6e8a2602cc047fba87e3dd2b4fc1737 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_444d6a8634c74810a71719969d4e6aab = $(`<div id="html_444d6a8634c74810a71719969d4e6aab" style="width: 100.0%; height: 100.0%;">Mean Delay: 3.3 days, Uberlândia, 66 delayed packages</div>`)[0];
+            popup_f6e8a2602cc047fba87e3dd2b4fc1737.setContent(html_444d6a8634c74810a71719969d4e6aab);
+        
+
+        circle_marker_c82a19552cef44ad8b6112cad8e93cf1.bindPopup(popup_f6e8a2602cc047fba87e3dd2b4fc1737)
+        ;
+
+        
+    
+    
+            var circle_marker_b4827dd43b0b443781ee2fb1b641b06e = L.circleMarker(
+                [-20.332179, -40.345011],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9929", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.863365702253601, "stroke": true, "weight": 3}
+            ).addTo(map_9e7d595ebfb042aca24afc04f9a110c0);
+        
+    
+        var popup_2f102cf258bf4edf924111e1e84c3909 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1a3fa8e586c4758a58b38f0b824629f = $(`<div id="html_a1a3fa8e586c4758a58b38f0b824629f" style="width: 100.0%; height: 100.0%;">Mean Delay: 5.8 days, Vitória, 30 delayed packages</div>`)[0];
+            popup_2f102cf258bf4edf924111e1e84c3909.setContent(html_a1a3fa8e586c4758a58b38f0b824629f);
+        
+
+        circle_marker_b4827dd43b0b443781ee2fb1b641b06e.bindPopup(popup_2f102cf258bf4edf924111e1e84c3909)
+        ;
+
+        
+    
+</script>
