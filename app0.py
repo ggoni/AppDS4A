@@ -9,18 +9,16 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 
-#external_stylesheets = ["https://codepen.io/chriddyp/pen/dZVMbK.css"]
+external_stylesheets = ["https://codepen.io/chriddyp/pen/dZVMbK.css"]
 
 
 
-#app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
-app = dash.Dash(__name__, external_stylesheets =[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # ------------------------------------------------------------------------------
 # Import and clean data (importing csv into pandas)
 
-df=pd.read_csv('data.csv') 
+df=pd.read_csv('data.csv')
 df['created']=pd.to_datetime(df['created']) 
 df['month_created']=df.created.dt.strftime(' %Y-%m') 
 best5=df.groupby(['mesoregion'])['sla_compliant'].mean().sort_values(ascending=False).reset_index()
@@ -57,7 +55,7 @@ app.layout = html.Div([
                     #{"label":"Itaquaquecetuba","value":"Itaquaquecetuba"},
                     {"label":"Joinville","value":"Joinville"},
                     #{"label":"Limeira","value":"Limeira"},
-                    #{"label":"Manaus","value":"Mana us"},
+                    {"label":"Manaus","value":"Mana us"},
                     {"label":"Piracicaba","value":"Piracicaba"},
                     {"label":"Porto Alegre","value":"Porto Alegre"},
                     {"label":"Recife","value":"Recife"},
@@ -80,31 +78,16 @@ app.layout = html.Div([
     #html.Div(id='output_container', children=[]),
     html.Br(),
 
-    html.Div([dbc.Row(
-        [
-            dbc.Col([dcc.Graph(id='my_histogram',style={'width': 600}),
-                    dcc.Graph(id='my_gauge',style={'width': 600})]
-
-                    ),
-
-
-            dbc.Col([dcc.Graph(id='my_scatter',style={'width': 600, 'overflowY': 'scroll'}),
-                    html.Iframe(id='map',srcDoc=open('delay_map.html','r').read(),width=600,height=600)
-
-            ]),
-
-            dbc.Col(
-                [dcc.Graph(id='worst5',style={'width': 600}),
-                dcc.Graph(id='best5',style={'width': 600})
-                ]
-                )
-        ]
-    )
-    ]),
-
+    dcc.Graph(id='my_histogram',style={'width': 600, 'overflowY': 'scroll'}),
+    dcc.Graph(id='my_gauge',style={'width': 600, 'overflowY': 'scroll'}),
+    dcc.Graph(id='worst5',style={'width': 600, 'height':300,'overflowY': 'scroll'}),
+    dcc.Graph(id='best5',style={'width': 600, 'height':300,'overflowY': 'scroll'}),
+    html.Iframe(id='map',srcDoc=open('delay_map.html','r').read(),width=800,height=800),
 
     html.Br(),
-    
+    html.Div([
+        dcc.Graph(id='my_scatter',style={'width': 600, 'overflowY': 'scroll'})
+    ])
 ])
 
 
@@ -152,10 +135,10 @@ def update_graph(option_selected):
         domain = {'x': [0, 1], 'y': [0, 1]},
         gauge = {
             'axis': {'range': [None, 100], 'tickwidth': 1, 'tickcolor': '#5052f9'},
-            'bar':{'color': "#336699"},
+            'bar':{'color': "#5052f9"},
             'steps': [
                 {'range': [0, 95], 'color': '#e8e8e8'},
-                {'range': [95, 100], 'color': '#336699'}]}
+                {'range': [95, 100], 'color': 'dark blue'}]}
     ))
 
    
@@ -164,19 +147,17 @@ def update_graph(option_selected):
     fig3.add_trace(go.Scatter(x=df_sla_ev.month_created, 
                     y=round(100*df_sla_ev.sla_compliant,2),
                     mode='markers+lines',
-                    line = dict(color='#336699', width=3))
+                    line = dict(color='#5052f9', width=3))
                     )
-    fig3.update_layout(title_text='SLA Monthly Evolution',plot_bgcolor='rgb(255,255,255)')
-
+    
     reds=5*['red']
     greens=5*['green']
 
 
     fig4=go.Figure(data=[go.Bar(x=worst5.mesoregion,y=worst5.sla_compliant,marker_color=reds)])
-    fig4.update_layout(title_text='Worst 5 Mesoregions',plot_bgcolor='rgb(255,255,255)')
-
+    fig4.update_layout(title_text='Worst 5 Mesoregions')
     fig5=go.Figure(data=[go.Bar(x=best5.mesoregion,y=best5.sla_compliant,marker_color=greens)])
-    fig5.update_layout(title_text='Best 5 Mesoregions',plot_bgcolor='rgb(255,255,255)')
+    fig5.update_layout(title_text='Best 5 Mesoregions')
     
 
 
